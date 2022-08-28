@@ -1,0 +1,60 @@
+//FONTS
+* {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+//Fonts
+$font_size: (
+    h1_h2:24px, 
+    h3:28px, 
+    h4_h5_p2:18px, 
+    h6_p1:16px, 
+    p3:14px, 
+    p4:17px, 
+    p5:15px
+);
+
+h1, h2 {
+    font-size: map-get($font_size, h1_h2);
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Shrikhand', cursive;
+    font-size: map-get($font_size, h3); 
+}
+
+h4 {
+    font-size: map-get($font_size, h4);
+}
+
+.location p, button, .functioning p {
+    font-size: map-get($font_size, h6_p1);
+    font-weight: 600;
+}
+
+button {
+    color: white;
+}
+
+.restaurant i {
+    font-size: 25px;
+}
+
+
+ //Colors
+ $primary_color: #9356DC;
+ $secondary_color: #FF79DA;
+ $tertiary_color: #99E2D0;
+ $background_color: #F5F5F5;
+ $background_color_dark: #EAEAEA;
+ $logo: #7E7E7E;
+    
+
+//IMG
+img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}

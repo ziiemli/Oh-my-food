@@ -1,0 +1,145 @@
+@import "./reset";
+@import "./library";
+@import "./placeholder";
+
+body {
+    width: 100%;
+    height: auto;
+    @extend %flex_center;
+    flex-direction: column;
+}
+
+//HEADER_________________________
+header{
+    width: 100%;
+    height: 63px;
+    @extend %flex_center;
+}
+
+.informations {
+    width: 100%;
+    @extend %flex_center;
+    flex-direction: column;
+}
+
+.informations__location {
+    width: 100%;
+    height: 50px; 
+    @extend %flex_center;
+    background-color: $background_color_dark;
+    a {
+        display: flex;
+        i {
+            margin-right: 18px;
+        }
+    }
+}
+
+//INFORMATIONS__________________
+.informations__goal {
+    width: auto;
+    height: auto;
+    @extend %flex_center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $background_color;
+    text-align: center;
+    padding: 44px 30px;
+    h1 {
+        margin-bottom: 20px;
+    }
+    button {
+        @extend %button;
+        margin-top: 34px; 
+    }
+}
+
+
+//FONCTIONNEMENT___________________
+.functioning {
+    width: 89%;
+    height: auto;
+    padding-top: 52px;
+    padding-bottom: 68px;
+    h2 {
+        padding-bottom: 10px;
+    }
+}
+
+//Functioning stage
+.functioning__stage {
+    width: 100%;
+    @extend %flex_center;
+    position: relative;
+    justify-content: start;
+    margin-top: 24px;
+    //Logo purple
+    .number {
+        width: 24px;
+        height: 24px;
+        @extend %flex_center;
+        color: white;
+        background-color: $primary_color;
+        border-radius: 20px;
+        z-index: 1;
+        position: absolute;
+    }
+    //Stages
+    &_content {
+        width: 98%;
+        height: 72px;
+        display: flex;
+        justify-content: start ;
+        align-items: center;
+        background-color: $background_color;
+        @extend %radius_shadow;
+        margin-left: 12px;
+        //Logo + Text
+        .functioning__logo {
+            margin-left: 33px;
+            margin-right: 27px;
+            color: $logo;
+        }
+        p {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+//RESTAURANTS___________________________
+main{
+    width: 89%;
+    height: auto;
+    background-color: $background_color;
+    padding: 60px 20px;
+    h2 {
+        margin-bottom: 9px;
+    }
+}
+
+//Restaurant Card
+.restaurant {
+    width: auto;
+    height: 253px;
+    background-color: white;
+    @extend %radius_shadow;
+    margin-top: 17px;
+    img {
+        height: 69%;
+        border-radius: 20px 20px 0 0;   
+    }
+    &__infos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 25px 17px 15px;
+        h4 {
+            margin-bottom: 8px;
+        }
+        
+    }
+}
+
+
+

@@ -1,0 +1,19 @@
+%flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%button {
+    width: 63%;
+    height: 50px;
+    background-color: $primary_color;
+    border: none; 
+    border-radius: 25px;
+    box-shadow: gray 0 5px 12px;
+}
+
+%radius_shadow {
+    border-radius: 18px;
+    box-shadow: gray 0 5px 12px;
+}
