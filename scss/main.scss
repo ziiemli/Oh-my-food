@@ -1,6 +1,7 @@
 @import "./reset";
 @import "./library";
 @import "./placeholder";
+@import "./animations";
 
 body {
     width: 100%;
@@ -14,14 +15,21 @@ header{
     width: 100%;
     height: 63px;
     @extend %flex_center;
+    img {
+        width: 164px;
+        height: auto;
+    }
 }
 
+
+//INFORMATIONS_________________________________
 .informations {
     width: 100%;
     @extend %flex_center;
     flex-direction: column;
 }
 
+//Location
 .informations__location {
     width: 100%;
     height: 50px; 
@@ -35,7 +43,8 @@ header{
     }
 }
 
-//INFORMATIONS__________________
+
+//Goal
 .informations__goal {
     width: auto;
     height: auto;
@@ -96,9 +105,16 @@ header{
         margin-left: 12px;
         //Logo + Text
         .functioning__logo {
+            width: 18px;
+            display: flex;
+            flex-direction: row;
             margin-left: 33px;
             margin-right: 27px;
             color: $logo;
+            //space between ellipsis and bars 
+            .fa-ellipsis-vertical {
+                margin-right: 2px;
+            }
         }
         p {
             margin-right: 15px;
@@ -125,10 +141,27 @@ main{
     background-color: white;
     @extend %radius_shadow;
     margin-top: 17px;
+    position: relative;
+    //New
+    &__new {
+        @extend %flex_center;
+        width: 80px;
+        height: 29px;
+        background-color: $tertiary_color;
+        color: darken($tertiary_color, 40%);
+        border-radius: 3px;
+        left: auto;
+        right: 13px;
+        top: 14px;
+        position: absolute;
+        animation: new infinite ease-in-out 5s alternate;
+    }
+    //Img
     img {
         height: 69%;
-        border-radius: 20px 20px 0 0;   
+        border-radius: 20px 20px 0 0; 
     }
+    //Infos
     &__infos {
         display: flex;
         align-items: center;
@@ -137,9 +170,52 @@ main{
         h4 {
             margin-bottom: 8px;
         }
-        
     }
 }
 
+//Card :hover
+.restaurant:hover {
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
+
+//Heart
+.fa-stack .fa-solid {
+    color: white;
+}
+
+.fa-stack:hover {
+    >.fa-solid {
+        color: $primary_color;
+    }
+    >.fa-regular {
+        display: none;
+    }
+}
+
+//FOOTER______________________________
+footer {
+    width: 100%;
+    height: auto;
+    @extend %flex_center;
+    background-color: #353535;
+    padding: 24px;
+    .footer {
+        width: 89%;
+        p {
+            margin-bottom: 24px;
+        }
+        li {
+            margin-bottom: 14px;
+            i {
+              width: 12px; 
+              height: auto; 
+              color: white;
+              margin-right: 12px;
+            }
+        }
+    }
+}
+    
 
 
