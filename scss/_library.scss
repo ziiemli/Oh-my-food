@@ -29,9 +29,14 @@ h4 {
     font-size: map-get($font_size, h4_h5_p2);
 }
 
-.information__location p, button, .functioning p {
+.informations__location p, button, .functioning p {
     font-size: map-get($font_size, h6_p1);
     font-weight: 600;
+}
+
+.functioning__stage .number {
+    font-size: map-get($font_size, p3);
+    font-weight: 300;
 }
 
 .restaurant__new {
@@ -41,6 +46,7 @@ h4 {
 
 button {
     color: white;
+    cursor: pointer;
 }
 
 .restaurant i {
