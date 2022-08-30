@@ -1,0 +1,160 @@
+
+//___HOME____//
+
+//INFORMATIONS_________________________________
+.informations {
+    width: 100%
+}
+
+//Location
+.informations__location {
+    width: auto;
+    height: 50px; 
+    @extend %flex_center;
+    background-color: $background_color_dark;
+    padding-right: 30px;
+    a {
+        display: flex;
+        i {
+            margin-right: 18px;
+        }
+    }
+}
+
+
+//Goal
+.informations__goal {
+    background-color: $background_color;
+    text-align: center;
+    padding: 44px 45px;
+    h1 {
+        margin-bottom: 20px;
+    }
+    button {
+        @extend %button;
+        margin-top: 34px; 
+    }
+}
+
+
+//FONCTIONNEMENT___________________
+.functioning {
+    padding: 52px 20px 68px 20px;
+    h2 {
+        padding-bottom: 10px;
+    }
+}
+
+//Functioning stage
+.functioning__stage {
+    width: 100%;
+    @extend %flex_center;
+    position: relative;
+    justify-content: start;
+    margin-top: 24px;
+    //Logo purple
+    .number {
+        width: 24px;
+        height: 24px;
+        @extend %flex_center;
+        color: white;
+        background-color: $primary_color;
+        border-radius: 20px;
+        z-index: 1;
+        position: absolute;
+    }
+    //Stages
+    &_content {
+        width: 98%;
+        height: 72px;
+        display: flex;
+        justify-content: start ;
+        align-items: center;
+        background-color: $background_color;
+        @extend %radius_shadow;
+        margin-left: 12px;
+        //Logo + Text
+        .functioning__logo {
+            width: 18px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 33px;
+            margin-right: 27px;
+            color: $logo;
+            //space between ellipsis and bars 
+            .fa-ellipsis-vertical {
+                margin-right: 2px;
+            }
+        }
+        p {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+.functioning__stage_content:hover {
+    background-color: lighten($primary_color, 33%);
+}
+
+//RESTAURANTS___________________________
+main{
+    background-color: $background_color;
+    padding: 60px 20px;
+    h2 {
+        margin-bottom: 9px;
+    }
+}
+
+//Restaurant Card
+.restaurant {
+    width: 100%;
+    height: 253px;
+    background-color: white;
+    @extend %radius_shadow;
+    margin-top: 17px;
+    position: relative;
+    //New
+    &__new {
+        @extend %flex_center;
+        width: 80px;
+        height: 29px;
+        background-color: $tertiary_color;
+        color: darken($tertiary_color, 40%);
+        border-radius: 3px;
+        left: auto;
+        right: 13px;
+        top: 14px;
+        position: absolute;
+        animation: new infinite ease-in-out 5s alternate;
+    }
+    //Img
+    img {
+        height: 69%;
+        border-radius: 20px 20px 0 0; 
+    }
+    //Infos
+    &__infos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 25px 17px 15px;
+        h4 {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+//Heart
+.fa-stack .fa-solid {
+    color: white;
+}
+
+.fa-stack:hover {
+    >.fa-solid {
+        color: $primary_color;
+    }
+    >.fa-regular {
+        display: none;
+    }
+}

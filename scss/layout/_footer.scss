@@ -1,0 +1,22 @@
+
+//___FOOTER____//
+
+footer {
+    background-color: #353535;
+    padding: 24px;
+    .footer {
+        width: 89%;
+        p {
+            margin-bottom: 24px;
+        }
+        li {
+            margin-bottom: 14px;
+            i {
+              width: 12px; 
+              height: auto; 
+              color: white;
+              margin-right: 12px;
+            }
+        }
+    }
+}

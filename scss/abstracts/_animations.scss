@@ -1,0 +1,16 @@
+
+//___ANIMATIONS____//
+
+@keyframes new {
+    from {
+        opacity: 50%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.restaurant:hover, button:hover, .functioning__stage:hover {
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
