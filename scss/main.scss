@@ -1,11 +1,18 @@
-@import "./reset";
-@import "./library";
-@import "./fonts";
-@import "./header";
-@import "./home";
-@import "./footer";
-@import "./placeholder";
-@import "./animations";
+@import "abstracts/reset";
+
+@import "library/library";
+
+@import "abstracts/placeholder";
+
+@import "library/fonts";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/lapalettedugout";
+
+@import "abstracts/animations";
 
 body {
     display: flex;
@@ -16,8 +23,3 @@ body {
 .container {
     width: 100%;
 }
-
-
-    
-
-

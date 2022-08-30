@@ -31,6 +31,13 @@ h4 {
     font-size: map-get($font_size, h4_h5_p2);
 }
 
+
+h5 {
+    font-size: map-get($font_size, h6);
+    font-weight: 400;
+}
+
+
 .informations__location p, button, .functioning p {
     font-size: map-get($font_size, h6_p1);
     font-weight: 600;
@@ -55,6 +62,24 @@ button {
     font-size: 25px;
 }
 
+.menu i {
+    font-size: 21px;
+}
+.menu__container__content__card__infos {
+    font-size: map-get($font-size, p5);
+}
+
+.card_price {
+    font-weight: bold;
+}
+
+.card_check i {
+    color: white;
+}
+
+
+
+//FOOTER
 footer p, footer li {
     color: white;
 }

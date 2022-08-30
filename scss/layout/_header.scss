@@ -5,8 +5,14 @@ header{
     width: 100%;
     height: 63px;
     @extend %flex_center;
+    position: relative;
+    .arrow {
+        position: absolute;        
+        left: 23px;
+    }
     img {
         width: 164px;
         height: auto;
     }
 }
+

@@ -3,7 +3,7 @@
 
 //INFORMATIONS_________________________________
 .informations {
-    width: 100%
+    width: 100%;
 }
 
 //Location
@@ -60,7 +60,6 @@
         color: white;
         background-color: $primary_color;
         border-radius: 20px;
-        z-index: 1;
         position: absolute;
     }
     //Stages
@@ -98,7 +97,7 @@
 }
 
 //RESTAURANTS___________________________
-main{
+#restaurants {
     background-color: $background_color;
     padding: 60px 20px;
     h2 {
