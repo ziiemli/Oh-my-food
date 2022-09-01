@@ -4,8 +4,8 @@
 $font_size: (
     h1_h2:24px, 
     h3:28px, 
-    h4_h5_p2:18px, 
-    h6_p1:16px, 
+    h4_h6_p2:18px, 
+    h5_p1:16px, 
     p3:14px, 
     p4:17px, 
     p5:15px
@@ -27,13 +27,13 @@ h3 {
     font-size: map-get($font_size, h3); 
 }
 
-h4 {
-    font-size: map-get($font_size, h4_h5_p2);
+h4, h6 {
+    font-size: map-get($font_size, h4_h6_p2);
 }
 
 
 h5 {
-    font-size: map-get($font_size, h6);
+    font-size: map-get($font_size, h5_p1);
     font-weight: 400;
 }
 
@@ -62,20 +62,23 @@ button {
     font-size: 25px;
 }
 
+//MENU PAGE Heart
 .menu i {
-    font-size: 21px;
-}
-.menu__container__content__card__infos {
-    font-size: map-get($font-size, p5);
+    font-size: 23px;
 }
 
-.card_price {
+.menu__card__text p, .menu__card__price {
+    font-size: map-get($font_size, p5);
+}
+
+.menu__card__price {
     font-weight: bold;
 }
 
-.card_check i {
+.menu__card__check i {
     color: white;
 }
+
 
 
 

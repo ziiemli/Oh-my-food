@@ -144,16 +144,3 @@
     }
 }
 
-//Heart
-.fa-stack .fa-solid {
-    color: white;
-}
-
-.fa-stack:hover {
-    >.fa-solid {
-        color: $primary_color;
-    }
-    >.fa-regular {
-        display: none;
-    }
-}

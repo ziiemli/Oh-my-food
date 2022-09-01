@@ -1,81 +1,103 @@
 
-//___LA PALETTE DU GOUT____//
+//___PAGE MENU____//
 
 section {
-    height: 100%;
     margin-top: 37px;
+    height: 100%;
 }
 
+//Menu container
 .menu {
     width: 100%;
     height: 100%;
-    margin-bottom: 100%;
-    position: relative;
     img {
+        width: 100%;
         height: 257px;
+        margin-bottom: 100%;
     }
     &__container {
         width: 100%;
+        height: auto;
         background-color: $background_color;
-        border-radius: 38px 38px 0 0;
-        position: absolute;
+        border-radius: 39px 39px 0 0;
         top: 220px;
+        position: absolute;
         &__content {
-            padding: 40px 14px;
-            &__title {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 24px 0px 5px;
-            }
-            h6 {
-                margin-left: 6px;     
-            }
-            &__border {
-                width: 40px;
-                height: 3px;
-                background-color: $tertiary_color;
-                margin: 9px 0 13px 5px; 
-            }
-        }  
-    }
-}
-
-.menu__card {
-    height: 68px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    border-radius: 12px;
-    @extend %radius_shadow;
-    margin-bottom: 14px;
-    padding-left: 9px;
-    overflow: hidden;
-    &__content {
-        width: 100%;
-        display: flex;
-
-        align-items: center;
-        &__text__infos {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 12px;
-            padding-right: 22px;  
+            margin: 34px 14px 0 14px;
         }
     }
 }
 
-.card_check {
-    position: absolute;
-    margin-left: auto;
-    right: -60px;
+//Menu title restaurant
+.menu__container__content__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //Heart 
+    .fa-stack {
+        margin-right: 15px;
+    }
 }
 
-.card_check_check {
-    width: 59px;
-    height: 68px;
-    @extend %flex_center;
-    background-color: $tertiary_color;
-    border-radius: 0 12px 12px 0;
+//Section menu title 
+h5 {
+    margin-bottom: 9px;
 }
+
+//Separation
+.menu__container__content__border {
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary_color;
+}
+
+//Card menu
+.menu__card {
+    height:  68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: gray 0 5px 12px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 14px;
+    padding-left: 11px;
+    //Text
+    &__text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 16px;
+        transition: all 300ms ease-out;
+        p, h6{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p {
+            margin-top: 12px;
+        }
+    }
+    //Price
+    &__price {
+        height: 45px;
+        display: flex;
+        align-items: flex-end;
+        padding-right: 22px;
+        transition: transform 300ms ease-out;
+    }
+    //Check
+    &__check {
+        width: 59px;
+        height: 70px;
+        @extend %flex_center;
+        background-color: $tertiary_color;
+        border-radius: 0 15px 15px 0;
+        right: 0;
+        position: absolute;
+        transform: translateX(100px);
+        transition: transform 300ms ease-out;
+    }
+}
+

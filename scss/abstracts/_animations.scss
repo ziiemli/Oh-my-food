@@ -15,21 +15,18 @@
     transition: ease-in-out;
 }
 
-@keyframes check {
-    0% {
-        transform: translate(-0px);
-        position: relative;
+.menu__card:hover { 
+    > .menu__card__check {
+        transform: translateX(0);
     }
-
-    100% {
-        transform: translate(-60px);
-        position: relative;
+    >.menu__card__price {
+        transform: translateX(-59px);
     }
-}
-
-article .menu__card__content:hover {
-    > .card_check {
-    animation: (check 0.5s ease-in-out);
+    >.menu__card__text {
+        padding-right: 90px;
     }
 }
+
+
+
 

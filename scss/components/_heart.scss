@@ -1,0 +1,18 @@
+
+//___HEART____//
+
+.fa-stack .fa-solid {
+    color: white;
+}
+
+.fa-stack:hover, .fa-stack:active {
+    >.fa-solid {
+        background: $gradiant_heart;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    >.fa-regular {
+        display: none;
+    }
+}
