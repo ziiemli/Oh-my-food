@@ -1,5 +1,12 @@
 
 //___PAGE MENU____//
+
+.menu {
+    background-color: $background_color;
+    padding-bottom: 58px;
+}
+
+//Top
 .menu__top {
     position: relative;
     img {
@@ -12,7 +19,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        background-color: aqua;
+        background-color: $background_color;
         border-radius: 39px 39px 0 0;
         padding-left: 19px;
         padding-right: 25px;
@@ -21,58 +28,24 @@
     }
 }
 
+//Type of dishes
 .menu__type {
-    background-color: $background_color;
-    padding: 0 10px 37px 10px;
+    padding: 0 14px 0 14px;
     position: relative;
     h5 {
-        padding-top: 38px ;
-    }
-    //separation
-    .menu__border {
-        width: 40px;
-        height: 3px;
-        background-color: $tertiary_color;
-    }
-}
-//Menu container
-.menu {
-    width: 100%;
-    height: 100%;
-    background-color: aquamarine;
-    img {
-        width: 100%;
-        height: 257px;
-    }
-    &__container {
-        width: 100%;
-        height: auto;
-        border-radius: 39px 39px 0 0;
-        background-color: purple;
-        top: 220px;
-        padding-bottom: 59px;
-        &__content {
-            margin: 34px 14px 0 14px;
-        }
+        padding-top: 38px;
+        margin-left: 7px;
     }
 }
 
-//Menu title restaurant
-.menu__container__content__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    //Heart 
-    .fa-stack {
-        margin-right: 15px;
-    }
+//separation
+.menu__border {
+    width: 40px;
+    height: 3px;
+    background-color: $tertiary_color;
+    margin-left: 7px;
+    margin-top: 9px;
 }
-
-//Section menu title 
-h5 {
-    margin-bottom: 9px;
-}
-
 
 //Card menu
 .menu__card {
@@ -92,6 +65,7 @@ h5 {
         overflow: hidden;
         text-overflow: ellipsis;
         padding-right: 16px;
+        padding-left: 12px;
         transition: all 300ms ease-out;
         p, h6{
             overflow: hidden;
@@ -123,3 +97,7 @@ h5 {
     }
 }
 
+.order {
+    @extend %flex_center;
+    margin-top: 46px;
+}

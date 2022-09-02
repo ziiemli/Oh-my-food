@@ -11,6 +11,7 @@ $font_size: (
     p5:15px
 );
 
+
 //Fonts_content
 * {
     font-family: 'Roboto', sans-serif;
@@ -38,10 +39,26 @@ h5 {
 }
 
 
-.informations__location p, button, .functioning p {
-    font-size: map-get($font_size, h6_p1);
+button, .functioning p {
+    font-size: map-get($font_size, h4_h6_p1);
     font-weight: 600;
 }
+
+.informations__location ::placeholder{
+    font-size: map-get($font_size, h4_h6_p1);
+    font-weight: 900;
+    color: black; 
+}
+
+.localisation:focus {
+    background-color: lighten($background_color_dark, 20%);
+    border-radius: 8px;
+}
+
+input:focus::placeholder {
+    color: lighten(black, 50%);
+}
+
 
 .functioning__stage .number {
     font-size: map-get($font_size, p3);
@@ -63,7 +80,7 @@ button {
 }
 
 //MENU PAGE Heart
-.menu i {
+.menu i, .menu__title i {
     font-size: 23px;
 }
 
@@ -79,7 +96,10 @@ button {
     color: white;
 }
 
-
+//check
+.menu__card__check i {
+    font-size: 20px;
+}
 
 
 //FOOTER

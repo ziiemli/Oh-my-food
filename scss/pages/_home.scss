@@ -8,15 +8,19 @@
 
 //Location
 .informations__location {
-    width: auto;
     height: 50px; 
     @extend %flex_center;
     background-color: $background_color_dark;
-    padding-right: 30px;
-    a {
-        display: flex;
+    form {
         i {
-            margin-right: 18px;
+            margin-right: 8px;
+        }
+        input {
+            width: 134px;
+            border: none;
+            background-color: $background_color_dark;
+            padding: 10px;
+            outline: none;
         }
     }
 }
@@ -31,7 +35,6 @@
         margin-bottom: 20px;
     }
     button {
-        @extend %button;
         margin-top: 34px; 
     }
 }
@@ -94,6 +97,9 @@
 
 .functioning__stage_content:hover {
     background-color: lighten($primary_color, 33%);
+    p, i {
+        color: $primary_color;
+    }
 }
 
 //RESTAURANTS___________________________

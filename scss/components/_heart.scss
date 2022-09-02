@@ -3,6 +3,8 @@
 
 .fa-stack .fa-solid {
     color: white;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .fa-stack:hover, .fa-stack:active {
@@ -11,6 +13,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+        opacity: 1;
     }
     >.fa-regular {
         display: none;

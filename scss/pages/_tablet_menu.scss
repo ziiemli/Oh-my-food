@@ -1,0 +1,31 @@
+
+//___TABLET PAGE MENU____//
+
+@media screen and (min-width: 768px){
+
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px 0 14px;
+}
+
+//Type of dishes
+.menu__type {
+    width: 31.5%;
+    padding: 0;
+}
+
+//Separation
+.menu__border {
+    width: 50px;
+    height: 4px;
+}
+
+//Card menu 
+.menu__card {
+    height: 78px;
+    margin-top: 24px;
+}
+
+}

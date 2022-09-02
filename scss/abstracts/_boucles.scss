@@ -1,0 +1,13 @@
+
+//___BOUCLES____//
+
+@for $i from 2 through 3 {
+    .menu-#{$i} {
+        animation-delay: $i*800ms;
+    }
+}
+@for $i from 1 through 9 {
+    .menu__card-#{$i} {
+        animation-delay: $i*500ms;
+    }
+}

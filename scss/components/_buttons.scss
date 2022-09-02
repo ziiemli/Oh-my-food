@@ -1,0 +1,19 @@
+
+//___BUTTONS____//
+
+
+button {
+    width: 63%;
+    height: 50px;
+    background: $gradiant;
+    border: none; 
+    border-radius: 25px;
+    box-shadow: gray 0 5px 12px;
+}
+
+button:hover {
+    background: linear-gradient(
+        lighten($secondary_color, 4%), lighten($primary_color, 4%)
+    );
+    box-shadow: darken(gray, 35%) 0 5px 12px;
+}

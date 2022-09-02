@@ -18,6 +18,9 @@
 .menu__card:hover { 
     > .menu__card__check {
         transform: translateX(0);
+        > .fa-circle-check {
+            animation: rotate_check 300ms ease-in;
+        }
     }
     >.menu__card__price {
         transform: translateX(-59px);
@@ -26,6 +29,37 @@
         padding-right: 90px;
     }
 }
+
+@keyframes rotate_check {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+//Appear
+@keyframes apparition {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.menu__type, .menu__card, .order {
+    animation: apparition 1000ms forwards ease-in;
+    opacity: 0;
+}
+
+.order {
+    animation-delay: 5s;
+}
+
 
 
 
