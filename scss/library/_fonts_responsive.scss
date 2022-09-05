@@ -1,0 +1,24 @@
+
+//___FONTS RESPONSIVE____//
+
+@media screen and (min-width: 768px) {
+
+:root {
+    --h1_h2: 34px;
+    --h3: 38px;
+    --h5_p1:17px; 
+    --h4_h6_p2: 20px;
+    --p5: 16px;
+}
+
+//MENU PAGE Heart________________________________
+.menu__title i {
+    font-size: 30px;
+}
+
+//MENU PAGE Card Check__________________________
+.menu__card__check i {
+    font-size: 25px;
+}
+    
+}

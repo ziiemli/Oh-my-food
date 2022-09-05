@@ -1,4 +1,5 @@
-//FONTS_______________________________________________
+
+//___FONTS____//
 
 //Variables
 $font_size: (
@@ -11,41 +12,61 @@ $font_size: (
     p5:15px
 );
 
+:root {
+    --h1_h2: 24px;
+    --h3: 28px;
+    --h4_h6_p2: 18px;
+    --h5_p1: 16px;
+    --p3: 14px;
+    --p4: 17px;
+    --p5: 15px;
 
-//Fonts_content
+}
+
+//FONTS CONTENTS
+
+
+//General____________________________________
 * {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 
 h1, h2 {
-    font-size: map-get($font_size, h1_h2);
+    font-size: var(--h1_h2);
     font-weight: bold;
 }
 
 h3 {
     font-family: 'Shrikhand', cursive;
-    font-size: map-get($font_size, h3); 
+    font-size: var(--h3); 
 }
 
 h4, h6 {
-    font-size: map-get($font_size, h4_h6_p2);
+    font-size: var(--h4_h6_p2);
 }
 
 
 h5 {
-    font-size: map-get($font_size, h5_p1);
+    font-size: var(--h5_p1);
     font-weight: 400;
 }
 
-
+//Button, Fonctionnement___________________
 button, .functioning p {
-    font-size: map-get($font_size, h4_h6_p1);
+    font-size: var(--h4_h6_p2);
     font-weight: 600;
 }
 
+button {
+    color: white;
+    cursor: pointer;
+}
+
+
+//Localisation___________________________
 .informations__location ::placeholder{
-    font-size: map-get($font_size, h4_h6_p1);
+    font-size: var(--h4_h6_p2);
     font-weight: 900;
     color: black; 
 }
@@ -59,45 +80,39 @@ input:focus::placeholder {
     color: lighten(black, 50%);
 }
 
-
+//Fonctionnement____________________________
 .functioning__stage .number {
-    font-size: map-get($font_size, p3);
+    font-size: var(--p3);
     font-weight: 300;
 }
 
+//HOME Restaurants___________________________
 .restaurant__new {
-    font-size: map-get($font-size, p3);
+    font-size: var(--p3);
     font-weight: bold;
-}
-
-button {
-    color: white;
-    cursor: pointer;
 }
 
 .restaurant i {
     font-size: 25px;
 }
 
-//MENU PAGE Heart
-.menu i, .menu__title i {
-    font-size: 23px;
+//MENU PAGE Heart_________________________
+.menu__title i {
+    font-size: 25px;
 }
 
+//MENU PAGE Card____________________________
 .menu__card__text p, .menu__card__price {
-    font-size: map-get($font_size, p5);
+    font-size: var(--p5);
 }
 
 .menu__card__price {
     font-weight: bold;
 }
 
+//MENU PAGE Card Check
 .menu__card__check i {
     color: white;
-}
-
-//check
-.menu__card__check i {
     font-size: 20px;
 }
 
@@ -109,11 +124,11 @@ footer p, footer li {
 
 footer p {
     font-family: 'Shrikhand', cursive;
-    font-size: map-get($font_size, h4_h5_p2);
+    font-size: var(--h4_h6_p2);
 }
 
 footer li {
-    font-size: map-get($font-size, h6_p1);
+    font-size: var(--h5_p1);
     font-weight: 300;
 }
 

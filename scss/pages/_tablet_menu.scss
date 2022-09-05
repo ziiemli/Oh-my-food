@@ -7,13 +7,16 @@
 .menu__container {
     display: flex;
     justify-content: space-between;
-    padding: 0 14px 0 14px;
+    padding: 0 14px;
 }
 
 //Type of dishes
 .menu__type {
     width: 31.5%;
     padding: 0;
+    h5 {
+        padding-top: 58px;
+    }
 }
 
 //Separation
@@ -26,6 +29,28 @@
 .menu__card {
     height: 78px;
     margin-top: 24px;
+    //Check
+    .menu__card__check {
+        width: 65px;
+        height: 78px;
+    }
 }
+
+.order {
+    margin-top: 60px;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+
+.menu__top .menu__title {
+    padding-left: 30px;
+    padding-right: 36px;
+}
+
+.menu__container {
+    padding: 0 25px;
+}    
 
 }

@@ -86,7 +86,7 @@
     //Check
     &__check {
         width: 59px;
-        height: 70px;
+        height: 68px;
         @extend %flex_center;
         background-color: $tertiary_color;
         border-radius: 0 15px 15px 0;
@@ -97,6 +97,7 @@
     }
 }
 
+//Button
 .order {
     @extend %flex_center;
     margin-top: 46px;

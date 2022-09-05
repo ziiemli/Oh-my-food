@@ -5,6 +5,7 @@
 @import "abstracts/placeholder";
 
 @import "library/fonts";
+@import "library/fonts_responsive";
 
 @import "layout/header";
 @import "layout/footer";
@@ -13,12 +14,15 @@
 @import "components/heart";
 
 @import "pages/home";
-@import "pages/lapalettedugout";
+@import "pages/menu";
 
 @import "abstracts/animations";
 @import "abstracts/boucles";
 
 @import "pages/tablet_menu";
+@import "pages/tablet_index";
+
+
 
 html {
     width: 100%;
