@@ -1,6 +1,13 @@
 
 //___ANIMATIONS____//
 
+//SCALE HOVER_______________________________________________________
+.restaurant:hover, button:hover, .functioning__stage:hover {
+    transform: scale(1.02);
+    transition: ease-in-out;
+}
+
+//HOME New restaurant__________________________________________
 @keyframes new {
     from {
         opacity: 50%;
@@ -10,11 +17,7 @@
     }
 }
 
-.restaurant:hover, button:hover, .functioning__stage:hover {
-    transform: scale(1.02);
-    transition: ease-in-out;
-}
-
+//CARD MENU____________________________________________________
 .menu__card:hover { 
     > .menu__card__check {
         transform: translateX(0);
@@ -30,6 +33,7 @@
     }
 }
 
+//CARD MENU Rotate check
 @keyframes rotate_check {
     from {
         transform: rotate(0deg);
@@ -39,7 +43,7 @@
     }
 }
 
-//Appear
+//CARD MENU Appear
 @keyframes apparition {
     from {
         transform: translateY(50%);

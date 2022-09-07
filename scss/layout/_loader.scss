@@ -1,0 +1,81 @@
+
+//___LOADER____//
+
+//Background Loader
+.background_loader {
+    width: 100%;
+    height: 100%;
+    @extend %flex_center;
+    background-color: $background_color;
+    opacity: 0.9;
+    position: absolute;
+    filter: contrast(20);
+    z-index: 2;
+    animation: fadeout 4s forwards ease-in-out;
+}
+
+//Loader
+.loader {
+    width: 155px;
+    height: 40px;
+    @extend %flex_center;
+    position: absolute;
+    z-index: 2;
+    animation: fadeout 4s forwards ease-in;
+    //DOT TOP
+    .dot {
+        width: 15px;
+        height: 15px;
+        background: black;
+        border-radius: 50%;
+        filter: blur(5px);
+        position: absolute;
+        left: 10px;
+        transform: translateX(0px);
+        animation: dot 2s infinite;
+        z-index: 2;
+    }
+    //DOTS
+    .dots {
+        display: flex;
+        span {
+            width: 15px;
+            height: 15px;
+            background: black;
+            border-radius: 50%;
+            filter: blur(5px);
+            margin-left: 18px;
+            transform: translateX(0);
+            animation: dots 2s infinite;
+        }
+    }
+
+//FADE OUT
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+        display: none;
+        z-index: -1;
+    }
+}
+
+
+//DOT TOP
+@keyframes dot {
+    50% {
+        transform: translateX(98px);
+    }
+}
+
+//DOTS 
+@keyframes dots {
+    50% {
+        transform: translateX(-35px);
+    }
+}
+
+}
+

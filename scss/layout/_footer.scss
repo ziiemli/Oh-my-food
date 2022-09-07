@@ -21,7 +21,9 @@ footer {
   
 }
 
-//RESPONSIVE
+//RESPONSIVE_________________________________________________
+
+//MIN WIDTH 768PX
 @media screen and (min-width: 768px) {
 
 footer, footer ul {
@@ -32,8 +34,8 @@ footer, footer ul {
 
 }
 
+//MIN WIDTH 992PX
 @media screen and (min-width: 992px) {
-
 
 footer p {
     margin-bottom: 50px;
@@ -47,4 +49,4 @@ footer ul {
     
 }
     
-    }
+}

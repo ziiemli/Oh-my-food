@@ -1,6 +1,7 @@
 
-//___TABLET PAGE MENU____//
+//___RESPONSIVE PAGE MENU____//
 
+//MIN WIDTH 768PX
 @media screen and (min-width: 768px){
 
 
@@ -10,7 +11,7 @@
     padding: 0 14px;
 }
 
-//Type of dishes
+//Type of dishes________________________
 .menu__type {
     width: 31.5%;
     padding: 0;
@@ -25,7 +26,7 @@
     height: 4px;
 }
 
-//Card menu 
+//Card menu_____________________________________ 
 .menu__card {
     height: 78px;
     margin-top: 24px;
@@ -36,12 +37,15 @@
     }
 }
 
+//Button_________________________________________
 .order {
     margin-top: 60px;
 }
 
 }
 
+
+//MIN WIDTH 992PX
 @media screen and (min-width: 992px) {
 
 .menu__top .menu__title {

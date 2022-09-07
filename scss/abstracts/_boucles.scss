@@ -1,6 +1,8 @@
 
 //___BOUCLES____//
 
+
+//CARD MENU Appear
 @for $i from 2 through 3 {
     .menu-#{$i} {
         animation-delay: $i*800ms;

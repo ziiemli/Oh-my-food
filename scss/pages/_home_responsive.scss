@@ -1,7 +1,12 @@
 
-//___TABLET INDEX____//
+//___RESPONSIVE HOME____//
 
 @media screen and (min-width: 768px) {
+
+//Location___________________________________
+.informations__location form input {
+    width: 160px;
+}
 
 //Fonctionnement______________________________
 .functioning {
@@ -16,7 +21,7 @@
     width: 32%;
 }
 
-//CARD RESTAURANT
+//CARD RESTAURANT______________________________
 #restaurants     {
     padding: 60px 30px;
 }

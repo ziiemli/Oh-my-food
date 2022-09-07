@@ -6,7 +6,7 @@
     padding-bottom: 58px;
 }
 
-//Top
+//Top______________________________________________
 .menu__top {
     position: relative;
     img {
@@ -28,7 +28,7 @@
     }
 }
 
-//Type of dishes
+//Type of dishes____________________________________
 .menu__type {
     padding: 0 14px 0 14px;
     position: relative;
@@ -47,7 +47,7 @@
     margin-top: 9px;
 }
 
-//Card menu
+//Card menu___________________________________________
 .menu__card {
     height:  68px;
     display: flex;
@@ -97,7 +97,7 @@
     }
 }
 
-//Button
+//Button______________________________________________
 .order {
     @extend %flex_center;
     margin-top: 46px;

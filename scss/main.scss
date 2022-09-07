@@ -7,6 +7,7 @@
 @import "library/fonts";
 @import "library/fonts_responsive";
 
+@import "layout/loader";
 @import "layout/header";
 @import "layout/footer";
 
@@ -19,14 +20,15 @@
 @import "abstracts/animations";
 @import "abstracts/boucles";
 
-@import "pages/tablet_menu";
-@import "pages/tablet_index";
+@import "pages/home_responsive";
+@import "pages/menu_responsive";
 
 
 
 html {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 body {
     width: 100%;
@@ -39,5 +41,4 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    position: relative;
 }
